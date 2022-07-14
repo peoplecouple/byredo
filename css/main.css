@@ -46,10 +46,26 @@ h2 {
   gap: 100px;
 }
 
+.header .gnb>ul:hover .sub {
+  display: block;
+}
+
 .header .gnb>ul>li>a {
   display: block;
   line-height: 40px;
   color: #fff;
+}
+
+.header .sub {
+  display: none;
+  border-top: #ccc;
+  font-size: 13px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.header .sub li {
+  line-height: 25px;
 }
 
 .header .gnb .menu_icon {
@@ -57,11 +73,12 @@ h2 {
   font-size: 19px;
   gap: 21px;
   align-items: center;
+  height: 40px;
   color: #fff;
 }
 
 .header .gnb .menu_icon a {
-  display: block
+  display: block;
 }
 
 
