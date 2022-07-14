@@ -2,9 +2,7 @@
   outline: 1px solid #f00;
 } */
 
-
 .Wrap {}
-
 
 .container {
   width: 1200px;
@@ -24,11 +22,9 @@ h2 {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
+  width: 100%;
   transition: top 0.2s ease-in-out;
+  z-index: 999;
 }
 
 .header h1 {
@@ -40,13 +36,14 @@ h2 {
 .header .gnb {
   display: flex;
   justify-content: space-between;
-  padding: 0 350px;
+  width: 100%;
+  padding: 0 18.5%;
   background: #000;
 }
 
 .header .gnb>ul {
   display: flex;
-  gap: 50px;
+  gap: 100px;
 }
 
 .header .gnb>ul>li>a {
@@ -76,14 +73,16 @@ h2 {
 
 .main_visaul .main_visaul_box {
   display: flex;
+}
+
+.main_visaul .main_visaul_box figure {
+  flex: 1;
   width: 950px;
   height: 850px;
 }
 
-
-
 .main_visaul img {
-  width: 950px;
+  width: 100%;
 }
 
 .main_visaul .scroll i {
@@ -325,9 +324,11 @@ h2 {
   width: 555px;
   height: 1px;
   background: #ccc;
+  margin-top: 5px;
 }
 
-.pefume_extracts .title {
+.pefume_extracts strong {
+  display: block;
   margin-bottom: 70px;
   font-size: 41px;
   font-weight: 300;
@@ -336,12 +337,11 @@ h2 {
 .pefume_extracts p {
   font-size: 17px;
   font-weight: 300;
-  margin-bottom: 10px;
-}
-
-.pefume_extracts .last {
+  line-height: 25px;
   margin-bottom: 90px;
 }
+
+
 
 .pefume_extracts a {
   display: inline-block;
@@ -390,9 +390,11 @@ h2 {
   width: 555px;
   height: 1px;
   background: #ccc;
+  margin-top: 5px;
 }
 
-.home_fragrance .title {
+.home_fragrance strong {
+  display: block;
   margin-bottom: 70px;
   font-size: 41px;
   font-weight: 300;
@@ -402,13 +404,12 @@ h2 {
 .home_fragrance p {
   font-size: 17px;
   font-weight: 300;
-  margin-bottom: 10px;
+  line-height: 25px;
+  margin-bottom: 90px;
   text-align: end;
 }
 
-.home_fragrance .last {
-  margin-bottom: 90px;
-}
+
 
 .home_fragrance a {
   display: inline-block;
@@ -542,32 +543,10 @@ h2 {
 /* category } */
 
 /* { notice */
-.notice .container {
-  width: 800px;
+marquee {
   line-height: 50px;
 }
 
-.notice .box {
-  width: 600px;
-}
-
-.notice_slide figure {
-  margin: 0 50px;
-}
-
-.notice .container {
-  display: flex;
-  font-size: 15px;
-  justify-content: space-between;
-}
-
-.notice .title {
-  height: 50px;
-}
-
-.notice .container figure p {
-  font-weight: 300;
-}
 
 /* notice } */
 
@@ -618,7 +597,7 @@ h2 {
 
 
 .footer .container .center .right p {
-  margin-bottom: 7px;
+  line-height: 15px;
   font-size: 11px;
   font-weight: 100;
 }
@@ -658,3 +637,7 @@ h2 {
 }
 
 /* footer } */
+/* 
+* {
+  outline: 1px solid #f00;
+} */

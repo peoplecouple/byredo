@@ -27,15 +27,6 @@ $(function () {
     //매 이벤트마다 걸려야하니 afterChange를 써야한다!
   })
 
-  $('.notice_slide').slick({
-    vertical: true,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-    verticalSwiping: true,
-  })
-
   $(function () {
     var didScroll;
     var lastScrollTop = 0;
@@ -51,7 +42,7 @@ $(function () {
         hasScrolled();
         didScroll = false;
       }
-    }, 100); // 스크롤이 멈춘 후 동작이 실행되기 까지의 딜레이
+    }, 0); // 스크롤이 멈춘 후 동작이 실행되기 까지의 딜레이
 
     function hasScrolled() {
       var st = $(this).scrollTop(); // 현재 window의 scrollTop 값
@@ -66,7 +57,6 @@ $(function () {
       } else {
         // 스크롤을 올렸을 때
         if (st + $(window).height() < $(document).height()) {
-          $("header").css("width", "1900px")
           $("header").css("background", "#000");
           $("header h1").css("line-height", "60px");
           $("header h1").css("filter", "invert()");
@@ -77,8 +67,7 @@ $(function () {
 
           $("header").show(); // header 보이기
         }
-        if (st <= 150) {
-          $("header").css("background", "transparent");
+        if (st <= 110) {
           $("header h1").css("line-height", "80px");
           $("header h1").css("filter", "none");
           $("header .gnb").css("color", "#000");
