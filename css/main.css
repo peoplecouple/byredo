@@ -217,7 +217,6 @@ h2 {
   height: 537px;
   background: url(../img/best_slider01.jpg) no-repeat center center/cover;
   margin-bottom: 20px;
-  transition: 0.5s;
 }
 
 .best_seller figure .product01:hover {
@@ -231,7 +230,6 @@ h2 {
   height: 537px;
   background: url(../img/best_slider02.jpg) no-repeat center center/cover;
   margin-bottom: 20px;
-  transition: 0.5s;
 }
 
 .best_seller figure .product02:hover {
@@ -245,7 +243,6 @@ h2 {
   height: 537px;
   background: url(../img/best_slider03.jpg) no-repeat center center/cover;
   margin-bottom: 20px;
-  transition: 0.5s;
 }
 
 .best_seller figure .product03:hover {
@@ -259,7 +256,6 @@ h2 {
   height: 537px;
   background: url(../img/best_slider04.jpg) no-repeat center center/cover;
   margin-bottom: 20px;
-  transition: 0.5s;
 }
 
 .best_seller figure .product04:hover {
@@ -273,7 +269,6 @@ h2 {
   height: 537px;
   background: url(../img/best_slider05.jpg) no-repeat center center/cover;
   margin-bottom: 20px;
-  transition: 0.5s;
 }
 
 .best_seller figure .product05:hover {
@@ -287,7 +282,6 @@ h2 {
   height: 537px;
   background: url(../img/best_slider06.jpg) no-repeat center center/cover;
   margin-bottom: 20px;
-  transition: 0.5s;
 }
 
 .best_seller figure .product06:hover {
