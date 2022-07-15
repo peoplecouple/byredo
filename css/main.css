@@ -43,7 +43,7 @@ h2 {
 
 .header .gnb>ul {
   display: flex;
-  gap: 100px;
+  
 }
 
 .header .gnb>ul:hover .sub {
@@ -53,6 +53,7 @@ h2 {
 .header .gnb>ul>li>a {
   display: block;
   line-height: 40px;
+  padding-right: 95px;
   color: #fff;
 }
 
@@ -68,6 +69,9 @@ h2 {
   line-height: 25px;
 }
 
+.header .sub li:last-child {
+  margin-bottom: 10px;
+}
 .header .gnb .menu_icon {
   display: flex;
   font-size: 19px;

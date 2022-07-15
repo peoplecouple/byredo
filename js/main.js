@@ -67,7 +67,7 @@ $(function () {
 
           $("header").show(); // header 보이기
         }
-        if (st <= 110) {
+        if (st <= navbarHeight + $(".main_visaul").outerHeight()) {
           $("header h1").css("line-height", "80px");
           $("header h1").css("filter", "none");
           $("header .gnb").css("color", "#000");
