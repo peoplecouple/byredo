@@ -2,6 +2,10 @@
   outline: 1px solid #f00;
 } */
 
+body {
+  position: relative;
+}
+
 .Wrap {}
 
 .container {
@@ -31,6 +35,17 @@ h2 {
   text-align: center;
   line-height: 80px;
   background: white;
+  font-size: 0;
+}
+
+/* 
+라인하이트로 그림을 중간으로 보낼 때는 아래로 살짝 쳐진다. 
+그 이유는 그림이 inline태그 속성, 패딩을 조금 갖는거 때문에
+그래서 font-size: 0 을 주면 패딩이 사라지고 그림도 중간으로 온다!
+*/
+
+.header h1 img {
+  vertical-align: middle;
 }
 
 .header .gnb {
@@ -43,12 +58,13 @@ h2 {
 
 .header .gnb>ul {
   display: flex;
-  
+
 }
 
 .header .gnb>ul:hover .sub {
   display: block;
 }
+
 
 .header .gnb>ul>li>a {
   display: block;
@@ -69,9 +85,16 @@ h2 {
   line-height: 25px;
 }
 
+
+.header .sub li a {
+  display: block;
+  width: 70%;
+}
+
 .header .sub li:last-child {
   margin-bottom: 10px;
 }
+
 .header .gnb .menu_icon {
   display: flex;
   font-size: 19px;
@@ -329,6 +352,12 @@ h2 {
   flex: 1;
 }
 
+.pefume_extracts img {
+  width: 570px;
+  height: 570px;
+}
+
+
 .pefume_extracts .inner {
   margin-left: 60px;
 }
@@ -359,7 +388,7 @@ h2 {
   font-size: 17px;
   font-weight: 300;
   line-height: 25px;
-  margin-bottom: 90px;
+  margin-bottom: 86px;
 }
 
 
@@ -568,8 +597,22 @@ marquee {
   line-height: 50px;
 }
 
-
 /* notice } */
+
+/* { scrollTop_btn */
+.scrollTop_btn {
+  position: fixed;
+  display: none;
+  bottom: 30px;
+  right: 30px;
+  /* transform: translate(-50%, -50%); */
+  font-size: 30px;
+  padding: 5px;
+  color: white;
+  background: #000;
+}
+
+/* scrollTop_btn } */
 
 /* { footer */
 .footer {

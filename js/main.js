@@ -82,6 +82,30 @@ $(function () {
     }
   })
 
+  $(window).on('scroll', function () {
+    var sct = $(window).scrollTop();
+    console.log(sct)
+    if (sct > 870) {
+      $('.scrollTop_btn').fadeIn(200);
+      if (sct > 4970) {
+        $('.scrollTop_btn').css({
+          position: 'absolute',
+          bottom: 630,
+        })
+      } else {
+        $('.scrollTop_btn').css({
+          position: 'fixed',
+          bottom: 30,
+        })
+      }
+    } else {
+      $('.scrollTop_btn').fadeOut(500);
+    }
 
+  })
+
+  $('.scrollTop_btn').on('click', function () {
+    $('html, body').animate({ scrollTop: 0 }, 200);
+  })
 
 })
